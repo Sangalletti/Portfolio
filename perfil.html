@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natã Sangalletti | Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-color: #0f172a;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Esconder scrollbar mas manter funcionalidade */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white">
+                    NS<span class="text-emerald-400">.</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#sobre" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Sobre</a>
+                    <a href="#projetos" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Projetos</a>
+                    <a href="#trajetoria" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Trajetória</a>
+                    <a href="http://lattes.cnpq.br/2321939744783969" target="_blank" class="px-4 py-2 rounded-full border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-slate-900 transition-all font-medium flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4 h-4"></i> Lattes
+                    </a>
+                </div>
+
+                <button class="md:hidden text-slate-300">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-12 relative">
+        <div class="max-w-6xl mx-auto px-4 text-center z-10">
+            <div class="inline-block px-4 py-1.5 rounded-full border border-slate-700 bg-slate-800/50 text-emerald-400 text-sm font-medium mb-6 backdrop-blur-sm">
+                Aberto a oportunidades em TI e Desenvolvimento
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Natã Frederico <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">Sangalletti</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Bolsista de Iniciação Científica & Desenvolvedor apaixonado por tecnologia, inovação e criação de jogos.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#sobre" class="px-8 py-3 rounded-full bg-emerald-500 text-slate-900 font-bold hover:bg-emerald-400 transition-all shadow-lg">
+                    Ver Portfólio
+                </a>
+                <div class="flex gap-4">
+                    <!-- Ícone do LinkedIn com SVG Nativo -->
+                    <a href="https://www.linkedin.com/in/natã-frederico-sangalletti-65426b349/" target="_blank" class="p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-emerald-500 transition-all text-slate-400 hover:text-white flex items-center justify-center group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-110"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <!-- Ícone do Email com SVG Nativo -->
+                    <a href="mailto:natafredericosangalletti@gmail.com" class="p-3 rounded-full bg-slate-800 border border-slate-700 hover:border-rose-500 transition-all text-slate-400 hover:text-white flex items-center justify-center group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-110"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="glass-card p-8 rounded-3xl border border-white/10">
+                    <h2 class="text-3xl font-bold mb-6 text-emerald-400">Sobre Mim</h2>
+                    <p class="text-slate-300 leading-relaxed mb-6 text-justify">
+                        Sou estudante do Ensino Médio Técnico em Informática no IFRO, apaixonado por tecnologia e inovação. Tenho experiência com linguagens como Python e Lua, atuando em desenvolvimento web, modelagem 3D com Blender e criação de jogos. Possuo domínio em Windows, Linux e Android, além de prática em redes, segurança digital, programação web, desenvolvimento de software e Arduino. Já participei de cursos e projetos que me desafiaram a aplicar o conhecimento de forma prática e estou sempre em busca de evolução. Atualmente estou no 3º ano do técnico, moro em Cacaulândia e estou aberto a oportunidades de estágio, colaboração ou projetos na área de TI, especialmente voltados para jogos, inovação e desafios técnicos. Meu objetivo é seguir carreira em Análise e Desenvolvimento de Sistemas (ADS).
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <i data-lucide="map-pin" class="text-emerald-500 w-5 h-5"></i>
+                            <span>Ariquemes / Cacaulândia, RO - Brasil</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <i data-lucide="graduation-cap" class="text-emerald-500 w-5 h-5"></i>
+                            <span>IFRO - Campus Ariquemes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <i data-lucide="code" class="text-blue-400"></i> Habilidades
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="skills-grid">
+                        <!-- Gerado pelo JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Projetos em Destaque</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MetaCampus -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-2 transition-all">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="gamepad-2" class="text-blue-400 w-8 h-8"></i>
+                            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded">2026 - Atual</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">MetaCampus (Roblox)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Plataforma digital gamificada baseada na recriação de um campus do Instituto Federal dentro da plataforma Roblox para auxiliar na adaptação de novos alunos.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Roblox Studio</span>
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Lua</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avaliação Formativa -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-2 transition-all">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="search" class="text-emerald-400 w-8 h-8"></i>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">2025 - Atual</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Avaliação Formativa Moodle</h3>
+                        <p class="text-slate-400 text-sm mb-4">Desenvolvimento de um protótipo de aplicativo para simplificar a criação e importação de questões em formato XML para o Moodle, focado no ensino médio.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">XML</span>
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Moodle</span>
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Pesquisa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ProntoSUS -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-2 transition-all">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="heart-pulse" class="text-rose-400 w-8 h-8"></i>
+                            <span class="text-xs bg-rose-500/20 text-rose-400 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">ProntoSUS</h3>
+                        <p class="text-slate-400 text-sm mb-4">Projeto de aplicativo integrado ao SUS para melhorar acesso e eficiência. Funcionalidades incluem Fila Virtual, Agenda Médica e Estoque de Medicamentos.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">App Mobile</span>
+                            <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Saúde</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trajetoria" class="py-24 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                    <i data-lucide="briefcase" class="text-emerald-500"></i> Trajetória
+                </h2>
+                <div class="space-y-6 border-l-2 border-slate-700 ml-3 pl-8 relative">
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 bg-emerald-500 rounded-full"></div>
+                        <h4 class="text-emerald-400 font-bold text-sm uppercase">2026 - Atual</h4>
+                        <h3 class="text-lg font-bold">Estagiário de TI (8h)</h3>
+                        <p class="text-slate-400">IFRO - Campus Ariquemes</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 bg-slate-700 rounded-full"></div>
+                        <h4 class="text-slate-500 font-bold text-sm uppercase">2024 - Atual</h4>
+                        <h3 class="text-lg font-bold">Ensino Médio Técnico em Informática</h3>
+                        <p class="text-slate-400">IFRO - Campus Ariquemes</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 bg-slate-700 rounded-full"></div>
+                        <h4 class="text-slate-500 font-bold text-sm uppercase">2025</h4>
+                        <h3 class="text-lg font-bold">Curso Robótica com Arduino - Nível Básico</h3>
+                        <p class="text-slate-400">Formação Continuada - IFRO</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                    <i data-lucide="calendar" class="text-blue-500"></i> Eventos & Publicações
+                </h2>
+                <div class="glass-card p-6 rounded-2xl space-y-4 text-sm text-slate-300">
+                    <p>• Apresentação slide Roblox Studio (2025)</p>
+                    <p>• II Workshop de Informática - IFROmatizando: Introdução a criação de jogos com Roblox Studio e Lua (2025)</p>
+                    <p>• X Feira de Estágio, Emprego e Oportunidades do IFRO (2025)</p>
+                    <p>• 21ª Semana Nacional de Ciência e Tecnologia: Mostra Científica (2024)</p>
+                    <p>• Start Canvas: Workshop Modelo de Negócio (2024)</p>
+                    <p>• IFROmatizando: I Workshop de Informática (2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2026 Natã Frederico Sangalletti | Estudante de Informática</p>
+        <p class="mt-2">ID Lattes: 2321939744783969</p>
+    </footer>
+
+    <script>
+        // Inicializar Ícones Lucide
+        lucide.createIcons();
+
+        // Partículas Configuração
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#10b981" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#10b981", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
+            },
+            "retina_detect": true
+        });
+
+        // Skills Data (Atualizado sem Java, com Redes, Linux e Blender)
+        const skills = [
+            { name: "Python", icon: "code" },
+            { name: "Lua", icon: "gamepad-2" },
+            { name: "Blender", icon: "box" },
+            { name: "Web Dev", icon: "globe" },
+            { name: "Android", icon: "smartphone" },
+            { name: "Arduino", icon: "cpu" },
+            { name: "Linux", icon: "terminal" },
+            { name: "Redes", icon: "network" }
+        ];
+
+        const skillsGrid = document.getElementById('skills-grid');
+        skills.forEach(skill => {
+            skillsGrid.innerHTML += `
+                <div class="glass-card p-4 rounded-xl flex flex-col items-center justify-center group hover:border-emerald-500 transition-all">
+                    <i data-lucide="${skill.icon}" class="w-6 h-6 mb-2 text-slate-400 group-hover:text-emerald-400"></i>
+                    <span class="text-xs font-medium text-center">${skill.name}</span>
+                </div>
+            `;
+        });
+        
+        // Re-inicializa os ícones recém criados na grelha
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-slate-900/90', 'backdrop-blur-md', 'py-3');
+            } else {
+                nav.classList.remove('bg-slate-900/90', 'backdrop-blur-md', 'py-3');
+            }
+        });
+    </script>
+</body>
+</html>
